@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.4;
+  background: beige;
+  color: #444;
+}
+
+.header img{
+/* max-width: 100%; */
+height: 400px;
+width: 100vw;
+object-fit: cover;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto ;
+  padding: 0 10px;
+}
+
+.heading {
+  /* font-size: 23px; */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.accordion {
+  list-style: none;
+}
+
+.accordion_item {
+  /* border-top: 1px solid #9f9f9f; */
+  
+}
+
+.button {
+  font-size: 16px;
+  background-color:#fff;
+  color:black;
+  text-align: left;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  border: 1px solid grey;
+  box-shadow: 1px 4px 6px #aaa;
+  
+}
+button:focus, button:focus-visible {
+  outline: none;
+}
+
+.control {
+  font-size: 20px;
+}
+
+.answer {
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* activate toggle */
+.accordion_item.active .button {
+  /* background-color: #105057; */
+}
+.answer_wrapper {
+  height: 0;
+  overflow: hidden;
+}
+.answer_wrapper.open {
+  height: auto;
+}
